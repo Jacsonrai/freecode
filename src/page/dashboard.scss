@@ -1,0 +1,58 @@
+.dashboardContainer{
+    width: 50%;
+    margin: 0 auto;
+    .container{
+       .dashbaordMainContainer{
+           .patientListContainer{
+            padding-top: 4em;
+               .patientTitleContainer{
+                   text-align: center;
+                   font-size: var(--font-size-title);
+                   color: var(--var-color6);
+                   margin-bottom: 1em;
+               }
+               .patientInformationContainer{
+                width: 70%;
+                margin: 0 auto;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                margin-bottom: 1em;
+                .patientsMainContainer{
+                    padding: 0.9em;
+                    .patientsNameContainer{
+                        .patientsName{
+                            font-size: var(--font-size-sub-item);
+                            color:var(--var-color);
+                            font-weight: 700;
+                        }
+                    }
+                    .patientsDetailsContainer{
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;  
+                        overflow: hidden;
+                        .patientsDetails{
+                            font-size: var(--font-size-sub-item);
+                            color:var(--var-color);
+                            font-weight: 400;
+                        }
+                    }
+                    .seeMoreContainer{
+                        padding-top: 0.8em;
+                        
+                        .seeMoreBtn{
+                            border: none;
+                            background-color:transparent;
+                            font-size: 1em;
+                            color: var(--var-color6);
+                            font-weight: 600;
+                            cursor: pointer;
+                            text-decoration: none;
+                        }
+                    }
+                }
+               }
+           }
+
+       }
+    }
+}

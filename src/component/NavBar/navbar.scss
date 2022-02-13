@@ -1,0 +1,33 @@
+.navbar {
+  .container {
+    .navbarMainContainer {
+        background-color: var(--var-color);
+      display: flex;
+      align-items: center;
+      padding: 0.2em;
+      .logoContainer {
+        font-size: var(--font-size-title);
+        font-weight: 800;
+        padding-left: 0.8em;
+        .logo {
+          text-decoration: none;
+          color: var(--var-color3);
+        }
+      }
+      .navItemContainer {
+        display: flex;
+        font-size:1.5em;
+        font-weight:600;
+        padding-left: 10em;
+        font-size: 500;
+       
+
+        .item {
+          text-decoration: none;
+          padding: 1em;
+          color: var(--var-color1);
+        }
+      }
+    }
+  }
+}

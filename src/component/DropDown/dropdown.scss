@@ -1,0 +1,24 @@
+.dropdownContainer{
+    .container{
+        .mainContainer{
+            display: flex;
+            flex-direction: column;
+           .treatmentTitle{
+               font-size: 1.4em;
+               color: var(--var-color);
+               font-weight: 600;
+           }
+           select{
+               height: 3em;
+             
+               .optionValue{
+                   font-size: 1.4em;
+                   color: var(--var-color);
+                   font-weight: 500;
+                 
+               }
+           }
+        }
+        
+    }
+}

@@ -1,0 +1,61 @@
+.singlePatientContainer{
+    width: 50%;
+    margin: 0 auto;
+    .container{
+        .mainContainer{
+            margin-top: 1em;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            .singlePatientTitleContainer{
+                text-align: center;
+                padding: 0.3em;
+                font-size: var(--font-size-title);
+                color: var( --var-color);
+                border-bottom: 1px solid var(--var-color6);
+                border-bottom-style: dashed;
+              
+            }
+            .singlePatientDetailContainer{
+                display: grid; 
+                grid-template-columns: repeat(3,1fr);
+                padding: 2em;
+                gap:3em;
+                border-bottom: 1px solid var(--var-color6);
+                border-bottom-style: dashed;
+                h5{
+                    font-size: 1.2em;
+                    color: var(--var-color);
+                }
+            }
+            .mediaclDiagnosisContainer{
+                padding: 2em;
+                .diagnosisContainer{
+                    margin-bottom: 1em;
+                }
+                .prescriptionContainer{
+                    margin-top: 1em;
+                    .prescription{
+                        color:tomato !important;
+                        font-weight: 600;
+                    }
+                }
+               
+                h5{
+                    font-size: 1.2em;
+                    color: var(--var-color); 
+                }
+                p{
+                    font-size: 1.2em;
+                    color: var(--var-color); 
+                    padding-top: 0.2em;
+                    
+                }
+                .allergies{
+                    color: red;
+                    font-weight: 700;
+                }
+               
+             
+            }
+        }
+    }
+}

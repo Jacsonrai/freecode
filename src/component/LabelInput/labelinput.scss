@@ -1,0 +1,21 @@
+.labelInputContainer {
+  .container {
+    .labelInputMainContainer {
+      .labelContainer {
+        color: var(--var-color);
+        font-weight: 600;
+        padding-bottom: 0.3em;
+        .medium {
+            font-size: var(--font-size-sub-item);
+        }
+      }
+      .inputContainer {
+        .medium {
+          font-size: 1.5em;
+          color: var(--var-color);
+          padding: 0.2em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.labelTextContainer{
+    .container{
+        .labeTextMainContainer{
+            .labelContainer{
+                font-size: var(--font-size-sub-item);
+                color: var(--var-color);
+                font-weight: 600;
+                padding-bottom: 0.2em;
+
+            }
+            .textContainer{
+                textarea{
+                    height: 10em;
+                    width: 100%;
+                    
+                }
+                .mediumText{
+                    font-size: 1.5em;
+                    color:var(--var-color);
+                    padding: 0.2em;
+                    
+                }
+            }
+        }
+    }
+}

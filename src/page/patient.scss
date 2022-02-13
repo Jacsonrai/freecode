@@ -1,0 +1,47 @@
+.patientInputContainer{
+    width: 50%;
+    margin: 0 auto;
+    .container{
+        .inputMainContainer{
+            margin-top: 2em;
+            margin-bottom: 2em;
+            padding: 1em;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            .inputTitleContainer{
+                .inputTitle{
+                    font-size: var(--font-size-title);
+                    color: var(--var-color6);
+                    text-align: center;
+                }
+                p{
+                    padding: 0.2em;
+                    color: var(--var-color);
+                    font-weight: 500;
+                    text-align: center;
+                }
+            }
+            .inputFormContainer{
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                width: 50%;
+                margin: 0 auto;
+                margin-top: 2em;
+                padding: 2em;
+                .submitBtnContainer{
+                    margin-top: 0.6em;
+                    .submitBtn{
+                        background-color:var(--var-background-color-3);
+                        border: none;
+                        padding: 0.5em;
+                        font-size: 1em;
+                        font-weight: 700;
+                        color: white;
+                        border-radius: 0.2em;
+                        &:hover{
+                            background-color: var(--var-color5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
