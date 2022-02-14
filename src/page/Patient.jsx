@@ -8,37 +8,33 @@ import { GlobalData } from "../Hooks/CreateContext";
 import https from "../utils/https";
 
 const Patient = () => {
-  const [detail] = useContext(GlobalData);
+  const [patientData, setPatientData] = useContext(GlobalData);
 
-  console.log(detail)
- 
+  // const [patientData, setPatientData] = useState({
+  //   firstName: "",
+  //   gender: "",
+  //   age: "",
+  //   email: "",
+  //   phone: "",
+  //   startDate: "",
+  //   endingDate: "",
+  //   allergies: "",
+  //   medicalDiagnosis:"",
+  //   description:"",
+  //   prescription: "",
+  // });
 
-  
-  
-  const [patientData, setPatientData] = useState({
-    firstName: "",
-    gender: "",
-    age: "",
-    email: "",
-    phone: "",
-    startDate: "",
-    endingDate: "",
-    allergies: "",
-    medicalDiagnosis:"",
-    description:"",
-    prescription: "",
-  });
-  
-  
-  
   const handelSubmit = (e) => {
     e.preventDefault();
-    
+
     const newPatient = { ...patientData };
 
     newPatient[e.target.value] = e.target.value;
 
-     https.post('/api/user',newPatient).then(response=>console.log(response)).catch(err=>console.log(err))
+    https
+      .post("/api/user", newPatient)
+      .then((response) => console.log(response))
+      .catch((err) => console.log(err));
   };
 
   return (
@@ -166,23 +162,14 @@ const Patient = () => {
             </div>
             <div className="descriptionDiagnosis">
               <LabelText
-              
                 LabelName="Description of the medical diagnosis"
-                setValue={detail.data ? detail.data.description : ""}
-                onInput={e=>setPatientData((prevState)=>({
-                  ...prevState,
-                  description:detail.data.description
-                }))}
-                />
+                setValue={patientData.description}
+              />
             </div>
             <div className="prescriptionContainer">
               <LabelText
                 LabelName="Medical Advice/Prescription"
-                setValue={detail.data ? detail.data.prescription : ""}
-                handelChange={(e)=>setPatientData((prevState)=>({
-                  ...prevState,
-                  prescription:e.target.setValue
-                }))}
+                setValue={patientData.prescription}
               />
             </div>
 

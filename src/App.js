@@ -7,7 +7,20 @@ import { useMemo, useState } from 'react';
 
 function App() {
   const [detail,setDetail]=useState([])
-  const ProviderValue=useMemo(()=>({detail,setDetail},[detail,setDetail]))
+  const [patientData, setPatientData] = useState({
+    firstName: "",
+    gender: "",
+    age: "",
+    email: "",
+    phone: "",
+    startDate: "",
+    endingDate: "",
+    allergies: "",
+    medicalDiagnosis:"",
+    description:"",
+    prescription: "",
+  });
+  const ProviderValue=useMemo(()=>({detail,setDetail,patientData, setPatientData},[detail,setDetail,patientData, setPatientData]))
   return (
     <GlobalData.Provider value={ProviderValue}>
         <BrowserRouter>
